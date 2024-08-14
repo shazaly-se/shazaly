@@ -1,0 +1,80 @@
+/* src/App.css */
+/* src/App.css */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+header {
+  background: #f4f4f4;
+  color: rgba(5, 5, 5, 0.233);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+section:nth-of-type(odd) {
+  background: #f4f4f4;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* .intro h1:before {
+  content: 'Shazaly';
+} */
+
+.watermarked {
+  position: relative;
+  overflow: hidden;
+}
+
+.watermarked::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/public/background.avif') no-repeat center center;
+ background-size: cover;
+  opacity: 0.5; /* Adjust opacity as needed */
+  z-index: -1; /* Place the image behind the content */
+}
+
+
+
+
