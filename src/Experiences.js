@@ -6,7 +6,7 @@ import React from 'react'
    <div className="intro section" id="experiences">
   <div className="container">
     <h1>Experiences</h1>
-    <p>test code</p>
+
     {experiences && experiences.map((experience,index) =>(
         <div key={index}>
   <ul className="work-list">
